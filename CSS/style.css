@@ -1,0 +1,45 @@
+body{
+  background-color: AliceBlue;
+}
+
+/*
+Colors used:
+Primary color (Red): #F75A55;
+Secondary colour (Black): #222222;
+*/
+
+body {
+  background-color: rgba(240,248,255,0.8);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; /* sets the font size to 20px */
+  font-weight: 500; /* sets the font weight to 500 */
+  line-height: 1.5; /* sets the line-height to 1.5 */
+  color: #222222;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2,75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
