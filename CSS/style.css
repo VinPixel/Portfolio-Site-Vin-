@@ -8,7 +8,7 @@ body {
   background-color: White;
   font-family: 'Roboto', sans-serif;
   font-size: 20px; /* sets the font size to 20px */
-  font-weight: 500; /* sets the font weight to 500 */
+  font-weight: normal; /* sets the font weight to 500 */
   line-height: 1.5; /* sets the line-height to 1.5 */
   color: #222222;
   margin: 25px;
@@ -18,13 +18,13 @@ h1, h2, h3, h4 {
   line-height: 1.5;
 }
 h1 {
-  font-size: 2,75em;
-  font-weight: 700;
+  font-size: 2,25em;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h3 {
@@ -38,7 +38,7 @@ h4 {
 }
 
 img {
-  width: 100%;
+  width: 60%;
 }
 
 .logo {
@@ -47,12 +47,42 @@ img {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: white;
+  background-color: lightgray;
   color: #222222; /* needed to override the default link color */
+  font-size: 15px;
   font-weight: 400;
   padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #994c30; /* width of the border, type, color */
+  border-radius: 5px;
+  border: 0px solid black; /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+nav {
+text-align: left;
+margin: 10px 0 0 ;
+padding: 0;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+
+nav li {
+   display: inline-block;
+   padding: 5px 5px;
+}
+
+nav a {
+  font-weight: normal;
+  padding: 10px 10px;
+  font-size: 1em;
   text-decoration: none;
 }
