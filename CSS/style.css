@@ -1,7 +1,3 @@
-body{
-  background-color: AliceBlue;
-}
-
 /*
 Colors used:
 Primary color (Red): #F75A55;
@@ -9,12 +5,13 @@ Secondary colour (Black): #222222;
 */
 
 body {
-  background-color: rgba(240,248,255,0.8);
+  background-color: White;
   font-family: 'Roboto', sans-serif;
   font-size: 20px; /* sets the font size to 20px */
   font-weight: 500; /* sets the font weight to 500 */
   line-height: 1.5; /* sets the line-height to 1.5 */
   color: #222222;
+  margin: 25px;
 }
 
 h1, h2, h3, h4 {
@@ -46,4 +43,16 @@ img {
 
 .logo {
   width: 125px;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: white;
+  color: #222222; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
 }
