@@ -5,13 +5,18 @@ Secondary colour (Black): #222222;
 */
 
 header {
-  background-color: white;
+  background-color: #white;
+  text-align: left;
   padding-top: 0px;
   padding-right: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   padding-left: 0px;
   margin: 0px;
-  border-bottom: 1px solid #222222;
+  border-bottom: 0px solid #222222;
+}
+
+.main {
+  padding-top: 0px;
 }
 
 .selector {
@@ -26,6 +31,40 @@ header {
   float: right;
 }
 
+/* Layout styling */
+.container {
+  padding: 0px;
+  background-color: white;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow:    0px 5px 11px 0px rgba(50, 50, 50, 0.35);
+  box-shadow:         0px 5px 11px 0px rgba(50, 50, 50, 0.35);
+  position: relative;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 0px; border-bottom: 1px solid #4a4a4a; }
+
+.center {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
   background-color: White;
   font-family: 'Roboto-light', sans-serif;
@@ -34,6 +73,15 @@ body {
   line-height: 1.5; /* sets the line-height to 1.5 */
   color: #222222;
   margin: 25px;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+  background-color: white;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -64,7 +112,7 @@ img {
 }
 
 .logo {
-  width: 125px;
+  max-width: 125px;
 }
 
 .button.contact {
@@ -104,15 +152,11 @@ margin: 10px 0 0 ;
 padding: 0;
 }
 
-nav ul{
-  list-style: none;
+nav > ul > li {
+  list-style-type: none;
   margin: 0px;
   padding: 0px;
-}
-
-nav li {
-   display: inline-block;
-   padding: 0px;
+  padding: 0px;
 }
 
 nav a {
