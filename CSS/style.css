@@ -6,17 +6,18 @@ Secondary colour (Black): #222222;
 
 header {
   background-color: #white;
-  text-align: left;
+  text-align: unset;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   margin: 0px;
+  position: relative;
   border-bottom: 0px solid #222222;
 }
 
 .main {
-  padding-top: 0px;
+  padding-top: 99px;
 }
 
 .selector {
@@ -63,6 +64,7 @@ header {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 body {
@@ -90,6 +92,9 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2,25em;
   font-weight: 100;
+#hero span {
+  display: block;
+}
 }
 
 h2 {
@@ -108,7 +113,7 @@ h4 {
 }
 
 img {
-  width: 60%;
+  width: 50%;
 }
 
 .logo {
@@ -165,3 +170,106 @@ nav a {
   font-size: 1em;
   text-decoration: none;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+
+#about-page h3 { margin-top: 0;}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-7 {
+  width: 50%
+}
+
+.col-md-5 {
+  width: 50%
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+nav {
+  width: auto;
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes {
+  width 50%, max-width 50%, height: auto
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  /* ==============================
+  Extra-large devices (1920px or larger)
+  ================================= */
+  @media only screen and (min-width: 1920px) {
+  }
