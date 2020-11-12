@@ -5,7 +5,7 @@ Secondary colour (Black): #222222;
 */
 
 header {
-  background-color: #white;
+  background-color: white;
   text-align: unset;
   padding-top: 0px;
   padding-right: 0px;
@@ -14,6 +14,8 @@ header {
   margin: 0px;
   position: relative;
   border-bottom: 0px solid #222222;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main {
@@ -48,8 +50,6 @@ header {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
-#work .row { padding-bottom: 0px; border-bottom: 1px solid #4a4a4a; }
 
 .center {
   text-align: left;
@@ -198,11 +198,6 @@ Medium devices (640px and larger)
   float: left;
 }
 
-nav {
-  width: auto;
-  float: left;
-}
-
 .row::after {
   content: "";
   clear: both;
@@ -273,3 +268,15 @@ X-large devices (1440px or larger)
   ================================= */
   @media only screen and (min-width: 1920px) {
   }
+
+}
+
+
+.projects {
+  display: flex;
+}
+
+.project {
+  padding-right: 20px;
+  width: 50%;
+}
