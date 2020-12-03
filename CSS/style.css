@@ -171,6 +171,13 @@ nav a {
   text-decoration: none;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
