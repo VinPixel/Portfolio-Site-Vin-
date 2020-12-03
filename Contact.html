@@ -2,26 +2,31 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Vinn</title>
+  <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/Favicon_Vin_32px.jpg" rel="shortcut icon">
+  <link href="img/Favicon_Vin_32px.jpg" min-width: 641px; rel="shortcut icon">
 </head>
 
 <body>
   <!-- For the header -->
-  <header class="container">
-    <img class="logo" src="img/Vin_icon.png" alt="Vinn">
-    <!-- For the navigation -->
-    <nav>
-      <ul>
-        <a href="Index.html">Work</a>
-        <a href="About.html">About</a>
-        <a href="#">Contact</a>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="navtoggle">
+        <img class="logo" src="img/Vin_icon.png" alt="Vinn">
+        <!-- For the navigation -->
+        <nav>
+          <ul>
+            <a href="Index.html">Work</a>
+            <a href="About.html">About</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navtoggle()"><i class="fas fa-bars"></i></a>
+          </ul>
+        </nav>
   </header>
   <main class="container">
     <!-- For the hero section -->

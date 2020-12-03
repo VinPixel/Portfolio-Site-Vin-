@@ -6,7 +6,6 @@ Secondary colour (Black): #222222;
 
 header {
   background-color: white;
-  text-align: unset;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -171,6 +170,15 @@ nav a {
   text-decoration: none;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -178,6 +186,21 @@ nav a {
   font-size: 20px;
 }
 
+.navtoggle.responsive nav {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
