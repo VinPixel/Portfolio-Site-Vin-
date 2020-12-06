@@ -178,6 +178,9 @@ nav a {
 .navtoggle.responsive {
   position: relative;
 }
+.navtoggle .icon {
+  display: none;
+}
 
 .navtoggle li .icon {
   position: absolute;
@@ -209,7 +212,7 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
 }
-
+}
 #about-page h3 { margin-top: 0;}
 
 .col-md-6 {
@@ -292,15 +295,25 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
-  /* ==============================
+}
+ /* ==============================
   Extra-large devices (1920px or larger)
   ================================= */
   @media only screen and (min-width: 1920px) {
   }
 
-}
 
+@media only screen and (max-width: 640px) {
+  .navtoggle .icon {
+    display: inline-block;
+  }
+  .navtoggle a:not(.icon) {
+    display: none;
+  }
+  .navtoggle.responsive a {
+    display: inline-block;
+  }
+}
 
 .projects {
   display: flex;
