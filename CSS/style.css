@@ -301,6 +301,17 @@ X-large devices (1440px or larger)
 
 }
 
+@media only screen and (max-width: 640px) {
+  .navtoggle .icon {
+    display: inline-block;
+  }
+  .navtoggle a:not(.icon) {
+    display: none;
+  }
+  .navtoggle.responsive a {
+    display: inline-block;
+  }
+}
 
 .projects {
   display: flex;
