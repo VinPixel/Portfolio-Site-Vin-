@@ -2,28 +2,31 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Vinn</title>
-  <link rel="stylesheets" type="text/css" href="normalize.css" <link rel="stylesheets" type="text/css" href="css/style.css" <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/Favicon_Vin_32px.jpg" rel="shortcut icon">
+  <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/Favicon_Vin_32px.jpg" min-width: 641px; rel="shortcut icon">
 </head>
 
 <body>
   <!-- For the header -->
   <header>
-    <!-- For the navigation -->
-    <div>
-      <nav>
-        <img src="/img/Vin_icon.png" alt="Vinn">
-      </nav>
-      <nav>
-        <ul>
-          <li><a href="Index.html">Work</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="container">
+      <div class="navtoggle" id="navtoggle">
+        <img class="logo" src="img/Vin_icon.png" alt="Vinn">
+        <!-- For the navigation -->
+        <nav>
+          <ul>
+            <a href="#">Work</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+          </ul>
+        </nav>
   </header>
   <main>
     <br>
@@ -325,6 +328,8 @@
     <p>Copyright UXVinn 2020</p>
     </div>
   </footer>
+  <script src="js/jQuery-3.5.1.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
