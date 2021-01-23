@@ -76,6 +76,16 @@ body {
   margin: 25px;
 }
 
+.image400{
+    width:100%;
+    max-width:400px;
+}
+
+.image300{
+    width:100%;
+    max-width:300px;
+}
+
 .hero h1 {
   margin: 0;
   padding: 0.67em 0;
