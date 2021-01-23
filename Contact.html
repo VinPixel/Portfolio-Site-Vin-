@@ -2,31 +2,26 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Vinn</title>
-  <script src="https://kit.fontawesome.com/4299d1fe29.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/Favicon_Vin_32px.jpg" min-width: 641px; rel="shortcut icon">
+  <link href="img/Favicon_Vin_32px.jpg" rel="shortcut icon">
 </head>
 
 <body>
   <!-- For the header -->
-  <header>
-    <div class="container">
-      <div class="navtoggle" id="navtoggle">
-        <img class="logo" src="img/Vin_icon.png" alt="Vinn">
-        <!-- For the navigation -->
-        <nav>
-          <ul>
-            <a href="Index.html">Work</a>
-            <a href="About.html">About</a>
-            <a href="#">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="navtoggle()"><i class="fas fa-bars"></i></a>
-          </ul>
-        </nav>
+  <header class="container">
+    <img class="logo" src="img/Vin_icon.png" alt="Vinn">
+    <!-- For the navigation -->
+    <nav>
+      <ul>
+        <a href="Index.html">Work</a>
+        <a href="About.html">About</a>
+        <a href="#">Contact</a>
+      </ul>
+    </nav>
   </header>
   <main class="container">
     <!-- For the hero section -->
@@ -34,13 +29,35 @@
       <div>
         <h2>How may we collaborate?</h2>
       </div>
+      <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+  <script type="text/javascript">
+  function ValidateForm(frm) {
+  if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+  if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+  if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+  if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+  return true; }
+  </script>
+  <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+  <tr> <td>
+  <label for="Name">Name*:</label>
+  </td> <td>
+  <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="PhoneNumber">Phone number:</label>
+  </td> <td>
+  <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="FromEmailAddress">Email address*:</label>
+  </td> <td>
+  <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+  </td> </tr> <tr> <td>
+  <label for="Comments">Comments*:</label>
+  </td> <td>
+  <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+  </td> </tr> <tr> <td>
       <div>
-        <div>Name:</div><br>
-        <div>Email address:</div><br>
-        <div>Message:</div><br>
-      </div><br>
-      <div>
-        <a href="Submit.html" class="button">Submit</a><br>
+        <a href="Submit.html" class="button";>Submit</a><br>
         <br>
       </div>
       <!-- For the footer -->
